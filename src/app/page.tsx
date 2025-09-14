@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-orange-50 flex flex-col items-center justify-center p-8 sm:p-6 lg:p-8 font-sans">
+    <div className="min-h-screen bg-orange-50 flex flex-col items-center justify-center p-5 sm:p-6 lg:p-8 font-sans">
       <div className="w-full max-w-2xl bg-white rounded-3xl shadow-xl p-6 sm:p-10 text-center">
         {/* Hero Image Section */}
         <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden mb-8 shadow-md">
