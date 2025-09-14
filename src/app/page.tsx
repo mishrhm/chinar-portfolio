@@ -13,9 +13,8 @@ export default function Home() {
       following: '12',
     },
     bio: [
-      'Crochet | Stitching | Crafts & Dubai views',
       'From Chinar 🍁 Leaves to Burj Skies! 🌌📍Kashmir',
-      'Crochet • Stitching ideas',
+      'Crochet | Stitching | Crafts & Dubai views',
       '📍Dubai based 📩 DM for orders & collabs',
     ],
     youtubeLink: 'youtube.com/@Chinar2Burj'
@@ -55,8 +54,12 @@ export default function Home() {
             @{profile.handle}
           </p>
         </div>
+
+
+        {/* Social Links Component */}
+        <SocialLinks />
         
-        {/* Stats Section */}
+        {/* Stats Section
         <div className="grid grid-cols-3 gap-4 mb-8 text-gray-700">
           <div className="flex flex-col items-center">
             <span className="font-bold text-lg sm:text-2xl text-black">{profile.stats.posts}</span>
@@ -70,27 +73,24 @@ export default function Home() {
             <span className="font-bold text-lg sm:text-2xl text-black">{profile.stats.following}</span>
             <span className="text-xs sm:text-sm">following</span>
           </div>
-        </div>
+        </div> */}
 
         {/* Bio Section */}
-        <div className="text-sm sm:text-base text-gray-600 text-left mb-6 leading-relaxed">
+        <div className="text-bg sm:text-base text-gray-600 text-left mb-6 leading-relaxed">
           {profile.bio.map((line, index) => (
             <p key={index} className="mb-1">
               {line}
             </p>
           ))}
-          <Link
+          {/* <Link
             href={`https://${profile.youtubeLink}?sub_confirmation=1`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-pink-600 hover:underline mt-2 inline-block transition-colors duration-200"
           >
             <span className="font-medium">{profile.youtubeLink}</span>
-          </Link>
+          </Link> */}
         </div>
-
-        {/* Social Links Component */}
-        <SocialLinks />
       </div>
     </div>
   );
