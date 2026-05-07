@@ -6,18 +6,18 @@ const CrochetBasicCourse = () => {
   return (
     <a href="https://forms.gle/vUc4sBdHZdG8m7Yn7" target="_blank">
       <div className="mt-15 mb-30 bg-[#FDF2F0] font-sans text-[#4A3728] shadow-2xl overflow-hidden border-t-8 border-[#D84B5A]">
-        <div className="flex">
+        <div className="flex flex-col justify-center items-center sm:flex-row">
           <div>
             <HeaderSection></HeaderSection>
             <Hero15DaySection />
           </div>
-          <div className="py-12 px-4">
+          <div className="sm:py-12 px-4">
             <JoinOnlineClassSection />
             <SyllabusSection />
             <FloatingBadge />
           </div>
         </div>
-        <div className="bg-[#D84B5A] text-white p-3 relative">
+        <div className="bg-[#D84B5A] text-white p-3 relative mt-12 sm:mt-0">
           <FooterSection />
           <TagLine />
         </div>
@@ -107,7 +107,7 @@ function SyllabusSection() {
 
 function FloatingBadge() {
   return (
-    <div className="flex justify-end px-6 -mt-20 -mb-6">
+    <div className="flex justify-end px-6 -mt-32 sm:-mt-20 -mb-6">
       <div className="w-24 h-24 rounded-full border-2 border-dashed border-[#D84B5A] bg-white flex flex-col items-center justify-center text-center p-2 rotate-12 shadow-lg">
         <Heart size={12} className="text-[#D84B5A] fill-[#D84B5A]" />
         <span className="text-[10px] font-serif italic font-bold text-[#D84B5A]">
@@ -150,15 +150,15 @@ function HeaderSection() {
           <Heart size={16} className="text-[#D84B5A] fill-[#D84B5A]" />
         </div>
 
-        <h1 className="text-7xl font-serif text-[#D84B5A] italic leading-tight drop-shadow-sm">
+        <h1 className="text-4xl sm:text-7xl font-serif text-[#D84B5A] italic leading-tight drop-shadow-sm">
           Beginner
         </h1>
         <p className="text-sm font-bold tracking-[0.2em] -mt-1 mb-2">IN</p>
-        <h2 className="text-5xl font-black tracking-tighter uppercase mb-4">
+        <h2 className="text-3xl sm:text-5xl font-black tracking-tighter uppercase mb-4">
           Crochet?
         </h2>
 
-        <div className="bg-[#D84B5A] text-white py-2 px-4 rounded-full inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider mb-8">
+        <div className="bg-[#D84B5A] text-white py-2 px-4 rounded-full inline-flex items-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-wider mb-8">
           Join My Online Crochet Classes{" "}
           <Heart size={14} className="fill-white" />
         </div>
@@ -171,7 +171,7 @@ function Hero15DaySection() {
   return (
     <div className=" text-[#4A3728] overflow-hidden border-t-8 border-[#D84B5A]">
       <div className="relative px-6 mb-8 flex items-center justify-center gap-4 bg-[#FDF2F0]">
-        <div className="text-9xl font-black text-[#D84B5A] leading-none outline-text ">
+        <div className="text-7xl sm:text-9xl font-black text-[#D84B5A] leading-none outline-text ">
           15
         </div>
         <div className="flex flex-col">
