@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
 import { Heart, MousePointerClick, MessageCircle } from "lucide-react";
+import { GiClick } from "react-icons/gi";
 
 const CrochetBasicCourse = () => {
   return (
     <a href="https://forms.gle/vUc4sBdHZdG8m7Yn7" target="_blank">
-      <div className="mt-15 mb-30 bg-[#FDF2F0] font-sans text-[#4A3728] shadow-2xl overflow-hidden border-t-8 border-[#D84B5A]">
+      <div className="mt-5 mb-30 bg-[#FDF2F0] font-sans text-[#4A3728] shadow-2xl overflow-hidden border-t-8 border-[#D84B5A]">
         <div className="flex flex-col justify-center items-center sm:flex-row">
           <div>
             <HeaderSection></HeaderSection>
@@ -29,14 +30,16 @@ const CrochetBasicCourse = () => {
 function FooterSection() {
   return (
     <div className="flex items-center gap-4 mb-4">
-      <div className="bg-white rounded-full p-3 text-[#D84B5A]">
-        <MessageCircle size={28} className="fill-[#D84B5A]" />
+      <div className="bg-white rounded-full p-3 text-[#D84B5A] rotate-120">
+        <GiClick size={28} className="fill-[#D84B5A]" />
       </div>
       <div className="leading-tight">
         <h3 className="font-black text-lg">INTERESTED?</h3>
         <p className="text-xs">
-          <span className="text-yellow-300 font-bold">CLICK HERE</span> TO JOIN
-          MY ONLINE CROCHET CLASSES!
+          <span className="text-yellow-300 text-lg font-extrabold">
+            CLICK HERE
+          </span>{" "}
+          TO JOIN MY ONLINE CROCHET CLASSES!
         </p>
       </div>
     </div>
@@ -175,7 +178,9 @@ function Hero15DaySection() {
           15
         </div>
         <div className="flex flex-col">
-          <span className="text-4xl font-bold italic text-[#4A3728]">DAYS</span>
+          <span className="text-4xl font-bold italic text-[#4A3728] mt-2">
+            DAYS
+          </span>
           <span className="text-3xl font-serif italic text-[#D84B5A]">
             Crochet Basics
           </span>
