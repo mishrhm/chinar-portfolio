@@ -1,23 +1,22 @@
-
-import Link from 'next/link';
-import Image from 'next/image';
-import SocialLinks from './socialLinks';
+import Image from "next/image";
+import SocialLinks from "./socialLinks";
+import CrochetBasicCourse from "./crochetBasicCourse";
 
 export default function Home() {
   const profile = {
-    name: 'Iqra Mishal',
-    handle: 'chinar2burj',
+    name: "Iqra Mishal",
+    handle: "chinar2burj",
     stats: {
-      posts: '47',
-      followers: '1.904k',
-      following: '12',
+      posts: "47",
+      followers: "1.904k",
+      following: "12",
     },
     bio: [
-      'From Chinar 🍁 Leaves to Burj Skies! 🌌📍Kashmir',
-      'Crochet | Stitching | Crafts & Dubai views',
-      '📍Dubai based 📩 DM for orders & collabs',
+      "From Chinar 🍁 Leaves to Burj Skies! 🌌📍Kashmir",
+      "Crochet | Stitching | Crafts",
+      "📍Dubai based 📩 DM for orders & collabs",
     ],
-    youtubeLink: 'youtube.com/@Chinar2Burj'
+    youtubeLink: "youtube.com/@Chinar2Burj",
   };
 
   return (
@@ -27,7 +26,7 @@ export default function Home() {
         <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden mb-8 shadow-md">
           {/* Use a placeholder image from a service like Unsplash for now */}
           <Image
-            src="https://cmtyhelp.com/wp-content/uploads/2025/09/Chinar2Burj-Cover.webp"
+            src="/Chinar2Burj-Cover.webp"
             alt="Beautiful crochet work and crafting supplies"
             layout="fill"
             objectFit="cover"
@@ -40,7 +39,7 @@ export default function Home() {
           <div className="relative w-24 h-24 sm:w-40 sm:h-40 rounded-full -mt-20 sm:-mt-24 mb-4 overflow-hidden border-4 border-white-100 shadow-lg">
             {/* Placeholder for the profile picture */}
             <Image
-              src="https://cmtyhelp.com/wp-content/uploads/2025/09/Chinar2Burj-Credit-scaled.webp"
+              src="/insta dp.jpg"
               alt="Chinar2Burj Profile Picture"
               layout="fill"
               objectFit="cover"
@@ -55,25 +54,32 @@ export default function Home() {
           </p>
         </div>
 
-
         {/* Social Links Component */}
         <SocialLinks />
-        
-        {/* Stats Section
-        <div className="grid grid-cols-3 gap-4 mb-8 text-gray-700">
-          <div className="flex flex-col items-center">
-            <span className="font-bold text-lg sm:text-2xl text-black">{profile.stats.posts}</span>
-            <span className="text-xs sm:text-sm">posts</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="font-bold text-lg sm:text-2xl text-black">{profile.stats.followers}</span>
-            <span className="text-xs sm:text-sm">followers</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="font-bold text-lg sm:text-2xl text-black">{profile.stats.following}</span>
-            <span className="text-xs sm:text-sm">following</span>
-          </div>
-        </div> */}
+        {/* <CrochetLandingPage></CrochetLandingPage> */}
+        {
+          // Stats Section
+          // <div className="grid grid-cols-3 gap-4 mb-8 text-gray-700">
+          //   <div className="flex flex-col items-center">
+          //     <span className="font-bold text-lg sm:text-2xl text-black">
+          //       {profile.stats.posts}
+          //     </span>
+          //     <span className="text-xs sm:text-sm">posts</span>
+          //   </div>
+          //   <div className="flex flex-col items-center">
+          //     <span className="font-bold text-lg sm:text-2xl text-black">
+          //       {profile.stats.followers}
+          //     </span>
+          //     <span className="text-xs sm:text-sm">followers</span>
+          //   </div>
+          //   <div className="flex flex-col items-center">
+          //     <span className="font-bold text-lg sm:text-2xl text-black">
+          //       {profile.stats.following}
+          //     </span>
+          //     <span className="text-xs sm:text-sm">following</span>
+          //   </div>
+          // </div>
+        }
 
         {/* Bio Section */}
         <div className="text-bg sm:text-base text-gray-600 text-left mb-6 leading-relaxed">
@@ -91,6 +97,9 @@ export default function Home() {
             <span className="font-medium">{profile.youtubeLink}</span>
           </Link> */}
         </div>
+      </div>
+      <div>
+        <CrochetBasicCourse />
       </div>
     </div>
   );
